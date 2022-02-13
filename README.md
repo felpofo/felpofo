@@ -1,5 +1,5 @@
 <div align="center">
-  <img align="top" height="180em" src="https://github-readme-stats.vercel.app/api?username=felpofo&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_title=true&disable_animations=true&hide_border=true"/>
+  <img align="top" height="180em" src="https://github-readme-stats.vercel.app/api?username=felpofo&show_icons=true&theme=radical&include_all_commits=true&count_private=true&disable_animations=true&hide_border=true"/>
   <img align="left" height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=felpofo&layout=compact&langs_count=7&theme=radical&hide_border=true"/>
 </div>
 <div align="center">
