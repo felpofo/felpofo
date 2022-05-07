@@ -6,7 +6,7 @@
 
 <div align="center">
   <!--  Manjaro  --> <img src="https://img.shields.io/badge/Manjaro-35BF5C?style=for-the-badge&logo=manjaro&logoColor=white">
-  <!-- ArchLinux --> <img src="https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white">
+  <!-- ArchLinux --> <!--<img src="https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white">-->
 </div>
 <div align="center">
   <!--    HTML5   --> <!--<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">-->
