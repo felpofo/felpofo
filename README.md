@@ -17,7 +17,7 @@
   <!-- JavaScript --> <!--<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">-->
   <!--    React   --> <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
   <br>
-  <!--    Java    --> <img src="https://img.shields.io/badge/Java-20232A?style=for-the-badge&logo=java&logoColor=white">
+  <!--    Java    --> <img src="https://img.shields.io/badge/Java-F89820?style=for-the-badge&logo=java&logoColor=white">
   <!--   Spring   --> <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
   <!-- SpringBoot --> <img src="https://img.shields.io/badge/SpringBoot-5C9735?style=for-the-badge&logo=spring-boot&logoColor=white">
 </div>
