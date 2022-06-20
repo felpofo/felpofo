@@ -1,37 +1,65 @@
-<div align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=felpofo&show_icons=true&theme=radical&include_all_commits=true&count_private=true&disable_animations=true&hide_border=true"/>
-  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=felpofo&layout=compact&langs_count=7&theme=radical&hide_border=true"/>
-</div>
-  <br>
+<!-- <img width="400" align="right" src="https://github-readme-stats.vercel.app/api?username=felpofo&show_icons=true&bg_color=1e1e2e&title_color=87b0f9&text_color=c6d0f5&icon_color=f9e2af&hide_border=true" alt="Github Stats" /> -->
+<img width="400" align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=felpofo&show_icons=true&bg_color=1e1e2e&title_color=87b0f9&text_color=c6d0f5&icon_color=f9e2af&layout=compact&langs_count=6&hide_border=true" alt="Most Used Languages" />
 
-<div align="center">
-  <!--  Manjaro  --> <img src="https://img.shields.io/badge/Manjaro-35BF5C?style=for-the-badge&logo=manjaro&logoColor=white">
-  <!-- ArchLinux --> <!--<img src="https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white">-->
-</div>
-<div align="center">
-  <!--    HTML5   --> <!--<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">-->
-  <!--     CSS    --> <!--<img src="https://img.shields.io/badge/CSS-1572B6?&style=for-the-badge&logo=css3&logoColor=white">-->
-  <br>
-  <!-- TypeScript --> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
-  <!--   Node.js  --> <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white">
-  <!-- JavaScript --> <!--<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">-->
-  <!--    React   --> <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-  <br>
-  <!--    Java    --> <img src="https://img.shields.io/badge/Java-F89820?style=for-the-badge&logo=java&logoColor=white">
-  <!--   Spring   --> <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
-  <!-- SpringBoot --> <img src="https://img.shields.io/badge/SpringBoot-5C9735?style=for-the-badge&logo=spring-boot&logoColor=white">
+## Hi there! 👋🏻
+My name is **Felipe**, and I'm 15 years old.  
+
+You can find me in the links below, but if isn't  
+listed here it probably will be **@felpofo** 😉   
+
+<br>
+<div align="left">
+  <div>
+
+  ![Dev Ambient][Dev Ambient]  
+  [<img src="https://img.shields.io/badge/System-Manjaro-a6e3a1?style=for-the-badge&labelColor=1e1e2e">][Manjaro]  
+  [<img src="https://img.shields.io/badge/Editor-VSCode-87b0f9?style=for-the-badge&labelColor=1e1e2e">][VS Code]  
+  [<img src="https://img.shields.io/badge/Theme-Catppuccin-f2cdcd?style=for-the-badge&labelColor=1e1e2e">][Catppuccin]  
+
+  ![Languages][Languages]  
+  ![Typescript][Typescript]  
+  ![Python][Python]  
+  ![Java][Java]  
+
+  </div>
 </div>
 <br>
-<div align="center"> 
-  <!--  Discord  --> <a href="https://discord.gg/wagxzStdcR" target="_blank"><!--                          --><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"></a> 
-  <!--   Steam   --> <a href="https://steamcommunity.com/id/felpofo/" target="_blank"><!--                 --><img src="https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white"></a>
-  <!--  Spotify  --> <a href="https://open.spotify.com/user/i83u9qvjhi6qsuzpxjdli7vh9" target="_blank"><!----><img src="https://img.shields.io/badge/Spotify-1DB954?&style=for-the-badge&logo=spotify&logoColor=white"></a>
-  <br>
-  <!--  Twitter  --> <a href="https://twitter.com/felpofo" target="_blank"><!--                            --><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a>
-  <!-- Instagram --> <a href="https://instagram.com/felpofo/" target="_blank"><!--                         --><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
-  <br>
-  <!-- Linkedin  --> <a href="https://linkedin.com/in/felpofo" target="_blank"><!--                        --><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <!--   Gmail   --> <a href="mailto:felipepitolpuhl@gmail.com" target="_blank"><!--                       --><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
+<div>
+  <div>
 
-  ![Snake animation](https://github.com/felpofo/felpofo/blob/output/github-contribution-grid-snake.svg)
+  ![Contact][Contact]  
+  [<img src="https://img.shields.io/badge/Gmail-f38ba8?style=for-the-badge&labelColor=1e1e2e">][Email]
+  [<img src="https://img.shields.io/badge/Instagram-f38ba8?style=for-the-badge&labelColor=1e1e2e">][Instagram]  
+  [<img src="https://img.shields.io/badge/LinkedIn-87b0f9?style=for-the-badge&labelColor=1e1e2e">][LinkedIn]
+  [<img src="https://img.shields.io/badge/Discord-87b0f9?style=for-the-badge&labelColor=1e1e2e">][Discord]  
+  [<img src="https://img.shields.io/badge/Telegram-89dceb?style=for-the-badge&labelColor=1e1e2e">][Telegram]
+  [<img src="https://img.shields.io/badge/Twitter-89dceb?style=for-the-badge&labelColor=1e1e2e">][Twitter]  
+  [<img src="https://img.shields.io/badge/Steam-0e0e0e?style=for-the-badge&labelColor=1e1e2e">][Steam]
+  [<img src="https://img.shields.io/badge/Spotify-a6e3a1?&style=for-the-badge&labelColor=1e1e2e">][Spotify]  
+
+  </div>
 </div>
+<br>
+
+![Snake animation](https://github.com/felpofo/felpofo/blob/output/github-contribution-grid-snake.svg)  
+
+[Manjaro]: https://manjaro.org
+[VS Code]: https://code.visualstudio.com
+[Catppuccin]: https://github.com/catppuccin/catppuccin
+
+[Email]: mailto:felipepitolpuhl@gmail.com
+[LinkedIn]: https://linkedin.com/in/felpofo
+[Telegram]: https://t.me/felpolho
+[Instagram]: https://instagram.com/felpofo
+[Discord]: https://discordapp.com/users/414196720101228545
+[Twitter]: https://twitter.com/felpofo
+[Steam]: https://steamcommunity.com/id/felpofo
+[Spotify]: https://open.spotify.com/user/i83u9qvjhi6qsuzpxjdli7vh9
+
+[Dev Ambient]: https://img.shields.io/badge/Dev%20Ambient-1e1e2e?style=for-the-badge&labelColor=1e1e2e
+[Languages]: https://img.shields.io/badge/Languages-1e1e2e?style=for-the-badge&labelColor=1e1e2e
+[Contact]: https://img.shields.io/badge/Contact-1e1e2e?style=for-the-badge&labelColor=1e1e2e
+
+[Typescript]: https://img.shields.io/badge/Love-Typescript-87b0f9?style=for-the-badge&labelColor=1e1e2e
+[Python]: https://img.shields.io/badge/A%20Bit-Python-94e2d5?style=for-the-badge&labelColor=1e1e2e
+[Java]: https://img.shields.io/badge/Hate-Java-fab387?style=for-the-badge&labelColor=1e1e2e
