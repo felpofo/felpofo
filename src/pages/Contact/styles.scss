@@ -1,5 +1,5 @@
 @import "../../styles/theme";
-  
+
 .contact {
   height: 100vh;
 
@@ -54,9 +54,7 @@
     resize: none;
   }
 
-  button:hover .submit.icon {
-    background-color: $crust;
-  }
+  button:hover .submit.icon { background-color: $crust }
 
   .submit.icon {
     background-color: $mantle;
@@ -86,9 +84,7 @@
       width: 1.7em;
     }
 
-    &.loading {
-      animation: spin linear 1.5s infinite;
-    }
+    &.loading { animation: spin linear 1.5s infinite }
   }
 
   form {
@@ -111,16 +107,13 @@
     }
   }
 
-  .big {
-    transform: scale(1.5);
-  }
+  .big { transform: scale(1.5) }
 
   .error,
   .error > * {
     // duration needs to be same value on `Contact.jsx -> handleSubmit()`
     animation: error linear 400ms;
   }
-
 
   @media only screen and (orientation: landscape) {
     background: url("../../assets/background-landscape.svg") no-repeat top center;
@@ -133,27 +126,18 @@
     background-size: cover;
     background-color: $base;
 
-    * {
-      font-size: 1.1em;
-    }
+    * { font-size: 1.1em }
+    h1 { font-size: 2.75em }
 
-    h1 {
-      font-size: 2.75em;
-    }
-
-    .links {
-      a svg {
-        height: 2.5em;
-        width: 2.5em;
-      }
+    .links a svg {
+      height: 2.5em;
+      width: 2.5em;
     }
   }
 }
 
 @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+  to { transform: rotate(360deg) }
 }
 
 @keyframes error {
@@ -162,11 +146,7 @@
     transform: translateX(-0.1rem);
   }
 
-  50% {
-    transform: translateX(0.1rem);
-  }
+  50% { transform: translateX(0.1rem) }
 
-  75% {
-    transform: translateX(-0.1rem);
-  }
+  75% { transform: translateX(-0.1rem) }
 }

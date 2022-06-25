@@ -96,9 +96,9 @@ export function Contact() {
         />
         <button ref={buttonRef} type="submit">
           {!isLoading ? (
-            <PaperPlaneTilt className="icon submit" />
+            <PaperPlaneTilt className="icon submit" weight="fill" />
           ) : (
-            <CircleNotch className="icon submit loading" />
+            <CircleNotch className="icon submit loading" weight="bold" />
           )}
         </button>
       </form>
