@@ -49,7 +49,7 @@ listed here it probably will be **@felpofo** 😉
 
 [Email]: https://felpofo.github.io/felpofo
 [LinkedIn]: https://linkedin.com/in/felpofo
-[Telegram]: https://t.me/felpolho
+[Telegram]: https://t.me/felpofo
 [Instagram]: https://instagram.com/felpofo
 [Discord]: https://discordapp.com/users/414196720101228545
 [Twitter]: https://twitter.com/felpofo
