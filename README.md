@@ -47,7 +47,7 @@ listed here it probably will be **@felpofo** 😉
 [VS Code]: https://code.visualstudio.com
 [Catppuccin]: https://github.com/catppuccin/catppuccin
 
-[Email]: https://felpofo.github.io/felpofo
+[Email]: https://felpofo.vercel.app/contact
 [LinkedIn]: https://linkedin.com/in/felpofo
 [Telegram]: https://t.me/felpofo
 [Instagram]: https://instagram.com/felpofo
@@ -58,7 +58,7 @@ listed here it probably will be **@felpofo** 😉
 
 [Dev Ambient]: https://img.shields.io/badge/Dev%20Ambient-1e1e2e?style=for-the-badge&labelColor=1e1e2e
 [Languages]: https://img.shields.io/badge/Languages-1e1e2e?style=for-the-badge&labelColor=1e1e2e
-[Contact]: https://img.shields.io/badge/Contact-1e1e2e?style=for-the-badge&labelColor=1e1e2e
+[Contact]: https://img.shields.io/badge/Contact%2FSocial%20Media-1e1e2e?style=for-the-badge&labelColor=1e1e2e
 
 [Typescript]: https://img.shields.io/badge/Love-Typescript-87b0f9?style=for-the-badge&labelColor=1e1e2e
 [Python]: https://img.shields.io/badge/A%20Bit-Python-94e2d5?style=for-the-badge&labelColor=1e1e2e
