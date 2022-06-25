@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 
-import { App } from "./App";
 import "./styles/global.scss";
+import { App } from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="felpofo">
+    <BrowserRouter basename="/felpofo">
       <App />
     </BrowserRouter>
   </React.StrictMode>

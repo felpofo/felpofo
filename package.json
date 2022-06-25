@@ -1,6 +1,7 @@
 {
   "name": "felpofo",
   "private": true,
+  "homepage": "https://felpofo.github.io/felpofo/",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
