@@ -28,7 +28,7 @@ listed here it probably will be **@felpofo** 😉
   <div>
 
   ![Contact][Contact]  
-  [<img src="https://img.shields.io/badge/Gmail-f38ba8?style=for-the-badge&labelColor=1e1e2e">][Email]
+  [<img src="https://img.shields.io/badge/Email-f38ba8?style=for-the-badge&labelColor=1e1e2e">][Email]
   [<img src="https://img.shields.io/badge/Instagram-f38ba8?style=for-the-badge&labelColor=1e1e2e">][Instagram]  
   [<img src="https://img.shields.io/badge/LinkedIn-87b0f9?style=for-the-badge&labelColor=1e1e2e">][LinkedIn]
   [<img src="https://img.shields.io/badge/Discord-87b0f9?style=for-the-badge&labelColor=1e1e2e">][Discord]  
