@@ -1,0 +1,28 @@
+$bp-small: 768px;
+$bp-medium: 1024px;
+$bp-large: 1366px;
+$bp-xlarge: 1920px;
+$bp-xxlarge: 2560px;
+$bp-xxxlarge: 3000px;
+
+$mq-small: "(min-width: #{$bp-small})";
+$mq-medium: "(min-width: #{$bp-medium})";
+$mq-large: "(min-width: #{$bp-large})";
+$mq-xlarge: "(min-width: #{$bp-xlarge})";
+$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq-xxxlarge: "(min-width: #{$bp-xxxlarge})";
+
+$text: #ededff;
+$overlay1: #7d84a2;
+$overlay0: #6c728d;
+$base: #24273a;
+$mantle: #1e2030;
+$crust: #181926;
+
+$red: #ed8796;
+$yellow: #eed49f;
+$teal: #8bd5ca;
+$sky: #91d7e3;
+$sapphire: #7dc4e4;
+$blue: #8aadf4;
+$lavender: #b7bdf8;

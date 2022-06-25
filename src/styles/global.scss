@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap");
+@import "theme";
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  overflow: hidden;
+}
+
+*:not(head, head > *) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+
+  font-size: .9rem;
+  @media #{$mq-medium} { font-size: .85rem }
+  @media #{$mq-large} { font-size: .9rem }
+  @media #{$mq-xlarge} { font-size: 1.1rem  }
+  @media #{$mq-xxlarge} { font-size: 1.4rem }
+  @media #{$mq-xxxlarge} { font-size: 1.75rem }
+
+  color: $text;
+  
+  transition: linear 100ms;
+  
+  &::placeholder { color: $overlay1 }
+
+  &::selection {
+    background-color: adjust-color($base, $lightness: 10%);
+
+    @media only screen and (orientation: landscape) {
+      color: $sapphire;
+    }
+    
+    @media only screen and (orientation: portrait) {
+      color: $yellow;
+    }
+
+  }
+}

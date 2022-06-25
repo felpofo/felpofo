@@ -1,0 +1,36 @@
+@import "../../styles/theme";
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 3em 0;
+  gap: 0 1em;
+
+  a svg {
+    height: 2em; width: 2em;
+  }
+
+  a svg > * {
+    color: $text;
+  }
+
+  a:hover {
+    transform: scale(1.25);
+
+    &.github svg > * { color: $lavender }
+    &.twitter svg > * { color: $sky }
+    &.telegram svg > * { color: $blue }
+    &.instagram svg > * { color: $red }
+    &.linkedin svg > * { color: $sapphire }
+  }
+
+  &.big {
+    .github svg > * { color: $lavender }
+    .twitter svg > * { color: $sky }
+    .telegram svg > * { color: $blue }
+    .instagram svg > * { color: $red }
+    .linkedin svg > * { color: $sapphire }
+  }
+}
