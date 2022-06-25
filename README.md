@@ -47,7 +47,7 @@ listed here it probably will be **@felpofo** 😉
 [VS Code]: https://code.visualstudio.com
 [Catppuccin]: https://github.com/catppuccin/catppuccin
 
-[Email]: mailto:felipepitolpuhl@gmail.com
+[Email]: https://felpofo.github.io/felpofo
 [LinkedIn]: https://linkedin.com/in/felpofo
 [Telegram]: https://t.me/felpolho
 [Instagram]: https://instagram.com/felpofo
