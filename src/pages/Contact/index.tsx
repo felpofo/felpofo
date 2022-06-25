@@ -6,11 +6,9 @@ import type { FormEvent } from "react";
 import "./styles.scss";
 import { Links } from "../../components/Links";
 
-
 export function Contact() {
   const formRef = createRef<HTMLFormElement>();
   const buttonRef = createRef<HTMLButtonElement>();
-  const appRef = createRef<HTMLDivElement>();
 
   const [isLoading, setIsLoading] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
@@ -60,63 +58,58 @@ export function Contact() {
       .finally(() => {
         setIsLoading(false);
         setEmailSent(true);
-        appRef.current?.classList.add("remove-bg");
       });
   }
 
-  return (
-    <div ref={appRef} className="contact">
-      {!emailSent ? (
-        <>
-          <form ref={formRef} onSubmit={handleSubmit}>
-            <h1>Contact me!</h1>
-            <div className="personal-info">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <input
-              type="text"
-              name="subject"
-              placeholder="Email subject"
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
-            />
-            <textarea
-              name="message"
-              placeholder="Tell me, I'm curious..."
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-            <button ref={buttonRef} type="submit">
-              {!isLoading ? (
-                <PaperPlaneTilt className="icon submit" />
-              ) : (
-                <CircleNotch className="icon submit loading" />
-              )}
-            </button>
-          </form>
-          <Links />
-        </>
-      ) : (
-        <>
-          <h1 className="big" style={{ color: "#ededff" }}>
-            Thanks!
-          </h1>
-          <Links className="big" />
-        </>
-      )}
+  return !emailSent ? (
+    <div className="contact">
+      <form ref={formRef} onSubmit={handleSubmit}>
+        <h1>Contact me!</h1>
+        <div className="personal-info">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <input
+          type="text"
+          name="subject"
+          placeholder="Email subject"
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
+        />
+        <textarea
+          name="message"
+          placeholder="Tell me, I'm curious..."
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
+        <button ref={buttonRef} type="submit">
+          {!isLoading ? (
+            <PaperPlaneTilt className="icon submit" />
+          ) : (
+            <CircleNotch className="icon submit loading" />
+          )}
+        </button>
+      </form>
+      <Links />
+    </div>
+  ) : (
+    <div className="contact remove-bg">
+      <h1 className="big" style={{ color: "#ededff" }}>
+        Thanks!
+      </h1>
+      <Links className="big" />
     </div>
   );
 }
