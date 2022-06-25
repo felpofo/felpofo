@@ -5,13 +5,12 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "yarn install && yarn lint && tsc && vite build",
+    "build": "yarn lint && tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint --fix src"
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
-    "gh-pages": "^4.0.0",
     "phosphor-react": "^1.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
