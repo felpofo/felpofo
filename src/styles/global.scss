@@ -16,10 +16,10 @@ body {
   font-family: "Poppins", "Open Sans", "Arial", sans-serif;
   font-size: 14px;
 
-  font-size: .9rem;
-  @media #{$mq-medium} { font-size: .85rem }
-  @media #{$mq-large} { font-size: .9rem }
-  @media #{$mq-xlarge} { font-size: 1.1rem  }
+  font-size: .8rem;
+  @media #{$mq-medium} { font-size: .95rem }
+  @media #{$mq-large} { font-size: 1rem }
+  @media #{$mq-xlarge} { font-size: 1rem  }
   @media #{$mq-xxlarge} { font-size: 1.4rem }
   @media #{$mq-xxxlarge} { font-size: 1.75rem }
 
@@ -39,6 +39,5 @@ body {
     @media only screen and (orientation: portrait) {
       color: $yellow;
     }
-
   }
 }

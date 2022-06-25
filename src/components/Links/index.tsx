@@ -1,4 +1,3 @@
-import React from "react";
 import {
   GithubLogo,
   TwitterLogo,
@@ -15,7 +14,7 @@ const twitter = "https://twitter.com/felpofo";
 const insta = "https://instagram.com/felpofo";
 const linkedin = "https://linkedin.com/in/felpofo";
 
-export function Links(props) {
+export function Links(props: { className?: string }) {
   return (
     <div className={`links ${props.className ?? ""}`}>
       <a className="github" href={github} target="_blank" rel="noreferrer">

@@ -1,14 +1,16 @@
-import React, { useState, useRef } from "react";
+import { useState, createRef } from "react";
 import { send as sendEmail } from "@emailjs/browser";
 import { PaperPlaneTilt, CircleNotch } from "phosphor-react";
+import type { FormEvent } from "react";
 
 import "./styles.scss";
-import { Links } from "../Links";
+import { Links } from "../../components/Links";
+
 
 export function Contact() {
-  const formRef = useRef();
-  const buttonRef = useRef();
-  const appRef = useRef();
+  const formRef = createRef<HTMLFormElement>();
+  const buttonRef = createRef<HTMLButtonElement>();
+  const appRef = createRef<HTMLDivElement>();
 
   const [isLoading, setIsLoading] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
@@ -18,15 +20,15 @@ export function Contact() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  function handleSubmit(event) {
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     event.stopPropagation();
 
     if (!name || !email || !subject || !message) {
-      buttonRef.current.classList.add("error");
+      buttonRef.current?.classList.add("error");
 
       // timeout needs to be same value on error animations
-      setTimeout(() => buttonRef.current.classList.remove("error"), 400);
+      setTimeout(() => buttonRef.current?.classList.remove("error"), 400);
       return;
     }
 
@@ -58,12 +60,12 @@ export function Contact() {
       .finally(() => {
         setIsLoading(false);
         setEmailSent(true);
-        appRef.current.classList.add("remove-bg");
+        appRef.current?.classList.add("remove-bg");
       });
   }
 
   return (
-    <div ref={appRef} className="app">
+    <div ref={appRef} className="contact">
       {!emailSent ? (
         <>
           <form ref={formRef} onSubmit={handleSubmit}>
@@ -109,7 +111,9 @@ export function Contact() {
         </>
       ) : (
         <>
-          <h1 className="big" style={{ color: "#ededff" }}>Thanks!</h1>
+          <h1 className="big" style={{ color: "#ededff" }}>
+            Thanks!
+          </h1>
           <Links className="big" />
         </>
       )}

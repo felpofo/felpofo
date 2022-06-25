@@ -12,6 +12,8 @@ $mq-xlarge: "(min-width: #{$bp-xlarge})";
 $mq-xxlarge: "(min-width: #{$bp-xxlarge})";
 $mq-xxxlarge: "(min-width: #{$bp-xxxlarge})";
 
+$small-res-message: "This page wasn't designed to be beautiful in extreme small resolutions, you are probably using a phone or an weird resolution. If you are using a phone use it in portrait mode.";
+
 $text: #ededff;
 $overlay1: #7d84a2;
 $overlay0: #6c728d;
