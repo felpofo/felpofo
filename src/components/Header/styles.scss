@@ -1,0 +1,33 @@
+@import "../../styles/theme";
+
+header {
+  width: 100%;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+
+  background-color: $mantle;
+
+  line-height: 2rem;
+
+  .left h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .right {
+    a {
+      padding: 0 1rem;
+      
+      font-size: 1.2rem;
+      text-decoration: none;
+
+      &:hover {
+        color: $rosewater
+      }
+    }
+  }
+}

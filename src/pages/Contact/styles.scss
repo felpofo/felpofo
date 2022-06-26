@@ -115,6 +115,10 @@
     animation: error linear 400ms;
   }
 
+  .links {
+    padding: 3em 0 6em;
+  }
+
   @media only screen and (orientation: landscape) {
     background: url("../../assets/background-landscape.svg") no-repeat top center;
     background-size: cover;

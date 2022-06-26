@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
+import { Header } from "../../components/Header";
 
 import "./styles.scss";
 
 export function Home() {
   return (
     <div className="home">
-      <h1>Home</h1>
-      <Link to="/contact">Go to Contact</Link>
-      <Link to="/about">Go to About</Link>
+      <Header pageTitle="Home">
+        <Link to="/contact">Contact</Link>
+        <Link to="/about">About</Link>
+      </Header>
     </div>
   );
 }

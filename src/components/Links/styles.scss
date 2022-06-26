@@ -5,8 +5,8 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  padding: 3em 0 6em;
   gap: 0 1em;
+  line-height: 0;
 
   a svg { height: 2em; width: 2em }
   a svg > * { color: $text }
