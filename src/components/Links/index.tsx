@@ -7,9 +7,9 @@ import {
   LinkedinLogo,
 } from "phosphor-react";
 import cx from "classnames";
+import type { HTMLAttributes } from "react";
 
 import "./styles.scss";
-import type { HTMLAttributes } from "react";
 
 interface LinksProps extends HTMLAttributes<HTMLElement> {}
 
@@ -22,19 +22,19 @@ const linkedin = "https://linkedin.com/in/felpofo";
 export function Links(props: LinksProps) {
   return (
     <div className={cx("links", props.className)}>
-      <Link className="github" to={github} target="_blank" rel="noreferrer">
+      <Link className="github" to={github} target="_blank" rel="noopener noreferrer">
         <GithubLogo />
       </Link>
-      <Link className="twitter" to={twitter} target="_blank" rel="noreferrer">
+      <Link className="twitter" to={twitter} target="_blank" rel="noopener noreferrer">
         <TwitterLogo />
       </Link>
-      <Link className="telegram" to={telegram} target="_blank" rel="noreferrer">
+      <Link className="telegram" to={telegram} target="_blank" rel="noopener noreferrer">
         <TelegramLogo />
       </Link>
-      <Link className="instagram" to={insta} target="_blank" rel="noreferrer">
+      <Link className="instagram" to={insta} target="_blank" rel="noopener noreferrer">
         <InstagramLogo />
       </Link>
-      <Link className="linkedin" to={linkedin} target="_blank" rel="noreferrer">
+      <Link className="linkedin" to={linkedin} target="_blank" rel="noopener noreferrer">
         <LinkedinLogo />
       </Link>
     </div>

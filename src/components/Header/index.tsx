@@ -1,27 +1,22 @@
-import { Link } from "react-router-dom";
 import cx from "classnames";
-import type { HTMLAttributes, ReactNode } from "react";
+import type { HTMLAttributes } from "react";
 
 import "./styles.scss";
 import { Links } from "../Links";
 
 interface HeaderProps extends HTMLAttributes<HTMLElement> {
-  pageTitle?: string;
-  children?: ReactNode;
+  pageTitle: string;
 }
 
 export function Header(props: HeaderProps) {
   return (
     <header {...props} className={cx(props.className)}>
       <div className="left">
-        {props.pageTitle && <h1>{props.pageTitle}</h1>}
+        <h1>{props.pageTitle}</h1>
+        <div className="pages">{props.children}</div>
       </div>
 
       <Links />
-
-      <div className="right">
-        {props.children}
-      </div>
     </header>
   );
 }

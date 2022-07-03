@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
+import { Header } from "../../components/Header";
 
 import "./styles.scss";
 
 export function About() {
   return (
-    <div className="home">
-      <h1>About</h1>
-      <Link to="/">Go to Home</Link>
-      <Link to="/contact">Go to Contact</Link>
+    <div className="about">
+      <Header pageTitle="About">
+        <Link to="/">Home</Link>
+        <Link to="/contact">Contact</Link>
+      </Header>
     </div>
   );
 }

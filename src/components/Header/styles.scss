@@ -1,33 +1,43 @@
 @import "../../styles/theme";
 
 header {
-  width: 100%;
-
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 
   padding: 1rem;
+  gap: 2rem;
 
   background-color: $mantle;
 
-  line-height: 2rem;
+  > .left {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-  .left h1 {
-    font-size: 2rem;
-    font-weight: bold;
-  }
+    gap: 2rem;
 
-  .right {
-    a {
-      padding: 0 1rem;
-      
-      font-size: 1.2rem;
-      text-decoration: none;
+    > h1 {
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: bold;
+    }
+    
+    > .pages {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
 
-      &:hover {
-        color: $rosewater
+      > a {
+        font-size: 1.4rem;
       }
     }
+  }
+
+  > .links {
+    flex-wrap: wrap;
   }
 }

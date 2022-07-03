@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap");
 @import "theme";
 
 body {
   height: 100vh;
   width: 100vw;
 
-  overflow: hidden;
+  background-color: $base;
+
+  // overflow: hidden;
 }
 
 *:not(head, head > *) {
@@ -13,31 +15,38 @@ body {
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "Poppins", "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-
-  font-size: .8rem;
-  @media #{$mq-medium} { font-size: .95rem }
-  @media #{$mq-large} { font-size: 1rem }
-  @media #{$mq-xlarge} { font-size: 1rem  }
-  @media #{$mq-xxlarge} { font-size: 1.4rem }
-  @media #{$mq-xxxlarge} { font-size: 1.75rem }
-
+  font-family: "Poppins", "Open Sans", "Fira Mono", "Arial", sans-serif, monospace;
+  font-size: .4cm;
+  line-height: 1rem;
+  text-align: center;
   color: $text;
-  
-  transition: linear 100ms;
-  
+
+  outline: none;
+
   &::placeholder { color: $overlay1 }
 
   &::selection {
     background-color: adjust-color($base, $lightness: 10%);
 
-    @media only screen and (orientation: landscape) {
-      color: $sapphire;
-    }
-    
-    @media only screen and (orientation: portrait) {
-      color: $yellow;
-    }
+    @media only screen and (orientation: landscape) { color: $sapphire }
+    @media only screen and (orientation: portrait) { color: $yellow }
   }
+
+  scrollbar-width: auto;
+  scrollbar-color: mix($text, $crust) $crust;
+
+  &::-webkit-scrollbar { width: .75rem }
+  &::-webkit-scrollbar-track { background: $crust }
+  &::-webkit-scrollbar-thumb {
+    background-color: mix($text, $crust);
+    border-radius: 2rem;
+    border: .25rem solid $crust; 
+  }
+}
+
+a {
+  text-decoration: solid;
+  transition: linear 100ms;
+
+  &:hover { color: $rosewater }
 }

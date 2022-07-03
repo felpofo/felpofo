@@ -1,115 +1,202 @@
-import { useState, createRef } from "react";
+import React, { useState } from "react";
 import { send as sendEmail } from "@emailjs/browser";
-import { PaperPlaneTilt, CircleNotch } from "phosphor-react";
-import type { FormEvent } from "react";
+import { CaretDoubleRight, CaretLeft, CaretRight, CircleNotch, House } from "phosphor-react";
+import { Link } from "react-router-dom";
+
+import { Header } from "../../components/Header";
 
 import "./styles.scss";
-import { Links } from "../../components/Links";
 
 export function Contact() {
-  const formRef = createRef<HTMLFormElement>();
-  const buttonRef = createRef<HTMLButtonElement>();
-
-  const [isLoading, setIsLoading] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
+  const [error, setError] = useState(false);
+  const [isSendingEmail, setIsSendingEmail] = useState(false);
+
+  const [question, setQuestion] = useState(1);
 
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [contact, setContact] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    event.stopPropagation();
+  const previousQuestion = () => setQuestion((value) => (value -= 1));
+  const nextQuestion = () => setQuestion((value) => (value += 1));
 
-    if (!name || !email || !subject || !message) {
-      buttonRef.current?.classList.add("error");
+  function handleKeyDown(event: React.KeyboardEvent) {
+    if (event.key === "Enter") nextQuestion();
+  }
 
-      // timeout needs to be same value on error animations
-      setTimeout(() => buttonRef.current?.classList.remove("error"), 400);
-      return;
-    }
+  function handleSendEmail() {
+    setIsSendingEmail(true);
 
-    setIsLoading(true);
+    const service = "service_w6ayj3i";
+    const template = "template_wscx905";
+    const apiKey = "tTfSOba7i6Lq8zrQ2";
 
-    sendEmail(
-      "service_w6ayj3i",
-      "template_wscx905",
-      {
-        name,
-        email,
-        subject,
-        message,
-      },
-      "tTfSOba7i6Lq8zrQ2"
-    )
-      .then((res) => {
-        if (res.status !== 200) return Promise.reject();
+    const content = { name, contact, subject, message };
 
-        setName("");
-        setEmail("");
-        setSubject("");
-        setMessage("");
+    sendEmail(service, template, content, apiKey)
+      .then(() => {
+        setQuestion(0);
+        setEmailSent(true);
       })
-      .catch((err) => {
-        console.log(err);
-        alert("Unhandled error, report it to me please");
+      .catch(() => {
+        setQuestion(0);
+        setError(true);
       })
       .finally(() => {
-        setIsLoading(false);
-        setEmailSent(true);
+        setIsSendingEmail(false);
       });
   }
 
-  return !emailSent ? (
+  return (
     <div className="contact">
-      <form ref={formRef} onSubmit={handleSubmit}>
-        <h1>Contact me!</h1>
-        <div className="personal-info">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <input
-          type="text"
-          name="subject"
-          placeholder="Email subject"
-          value={subject}
-          onChange={(e) => setSubject(e.target.value)}
-        />
-        <textarea
-          name="message"
-          placeholder="Tell me, I'm curious..."
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
-        <button ref={buttonRef} type="submit">
-          {!isLoading ? (
-            <PaperPlaneTilt className="icon submit" weight="fill" />
-          ) : (
-            <CircleNotch className="icon submit loading" weight="bold" />
-          )}
-        </button>
-      </form>
-      <Links />
-    </div>
-  ) : (
-    <div className="contact remove-bg">
-      <h1 className="big" style={{ color: "#ededff" }}>
-        Thanks!
-      </h1>
-      <Links className="big" />
+      <Header pageTitle="Contact">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+      </Header>
+
+      <section>
+        {question === 1 && (
+          <>
+            <div className="question">
+              <div className="texts">
+                <p>What is your name?</p>
+                <p>i really wanna know</p>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(event) => setName(event.target.value)}
+                  onKeyDown={handleKeyDown}
+                />
+              </div>
+            </div>
+            {(name || contact || subject || message) && (
+              <CaretRight
+                size="3rem"
+                className="next"
+                onClick={nextQuestion}
+                style={{ cursor: "pointer" }}
+              />
+            )}
+          </>
+        )}
+
+        {question === 2 && (
+          <>
+            <div className="question">
+              <div className="texts">
+                <p>How can i contact you?</p>
+                <p>your email or link wharever</p>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  value={contact}
+                  onChange={(event) => setContact(event.target.value)}
+                  onKeyDown={handleKeyDown}
+                />
+              </div>
+            </div>
+            <CaretLeft
+              size="3rem"
+              className="previous"
+              onClick={previousQuestion}
+              style={{ cursor: "pointer" }}
+            />
+            {(contact || subject || message) && (
+              <CaretRight
+                size="3rem"
+                className="next"
+                onClick={nextQuestion}
+                style={{ cursor: "pointer" }}
+              />
+            )}
+          </>
+        )}
+
+        {question === 3 && (
+          <>
+            <div className="question">
+              <div className="texts">
+                <p>Why are you coming?</p>
+                <p>email subject</p>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  value={subject}
+                  onChange={(event) => setSubject(event.target.value)}
+                  onKeyDown={handleKeyDown}
+                />
+              </div>
+            </div>
+            <CaretLeft
+              size="3rem"
+              className="previous"
+              onClick={previousQuestion}
+              style={{ cursor: "pointer" }}
+            />
+            {(subject || message) && (
+              <CaretRight
+                size="3rem"
+                className="next"
+                onClick={nextQuestion}
+                style={{ cursor: "pointer" }}
+              />
+            )}
+          </>
+        )}
+
+        {question === 4 && (
+          <>
+            <div className="question">
+              <div className="texts">
+                <p>What do you wanna tell to me?</p>
+                <p>email message</p>
+              </div>
+              <textarea
+                value={message}
+                onChange={(event) => setMessage(event.target.value)}
+              />
+            </div>
+            <CaretLeft
+              size="3rem"
+              className="previous"
+              onClick={previousQuestion}
+              style={{ cursor: "pointer" }}
+            />
+            {(name && contact && subject && message) &&
+              (isSendingEmail ? (
+                <CircleNotch size="3rem" className="next loading" />
+              ) : (
+                <CaretDoubleRight
+                  size="3rem"
+                  className="next"
+                  onClick={handleSendEmail}
+                  style={{ cursor: "pointer" }}
+                />
+              ))}
+          </>
+        )}
+
+        {emailSent && (
+          <div className="thanks">
+            <p>Thanks!</p>
+            <Link to="/">
+              <House size="2rem" />
+            </Link>
+          </div>
+        )}
+
+        {error && (
+          <div className="failed">
+            <p>An error occurred. Try again later or contact me directly.</p>
+          </div>
+        )}
+      </section>
     </div>
   );
 }
