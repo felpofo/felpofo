@@ -6,7 +6,7 @@ import "./styles.scss";
 export function About() {
   return (
     <div className="about">
-      <Header pageTitle="About">
+      <Header pagetitle="About">
         <Link to="/">Home</Link>
         <Link to="/contact">Contact</Link>
       </Header>

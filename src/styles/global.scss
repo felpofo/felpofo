@@ -7,7 +7,7 @@ body {
 
   background-color: $base;
 
-  // overflow: hidden;
+  overflow: hidden;
 }
 
 *:not(head, head > *) {
@@ -24,12 +24,10 @@ body {
   outline: none;
 
   &::placeholder { color: $overlay1 }
-
   &::selection {
     background-color: adjust-color($base, $lightness: 10%);
 
-    @media only screen and (orientation: landscape) { color: $sapphire }
-    @media only screen and (orientation: portrait) { color: $yellow }
+    color: $sapphire;
   }
 
   scrollbar-width: auto;
@@ -40,7 +38,7 @@ body {
   &::-webkit-scrollbar-thumb {
     background-color: mix($text, $crust);
     border-radius: 2rem;
-    border: .25rem solid $crust; 
+    border: .25rem solid $crust;
   }
 }
 
@@ -48,5 +46,5 @@ a {
   text-decoration: solid;
   transition: linear 100ms;
 
-  &:hover { color: $rosewater }
+  &:hover { color: $sapphire }
 }

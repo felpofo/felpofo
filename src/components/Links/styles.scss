@@ -4,12 +4,12 @@
   display: flex;
   justify-content: center;
 
-  gap: 0 1em;
+  gap: 0 1rem;
   line-height: 0;
 
   a svg {
-    height: 2em;
-    width: 2em;
+    height: 2rem;
+    width: 2rem;
     
     > * { color: $text }
   }
