@@ -13,28 +13,27 @@ import "./styles.scss";
 
 interface LinksProps extends HTMLAttributes<HTMLElement> {}
 
+const links = [
+  { name: "github", component: <GithubLogo/> },
+  { name: "twitter", component: <TwitterLogo/> },
+  { name: "telegram", component: <TelegramLogo/> },
+  { name: "instagram", component: <InstagramLogo/> },
+  { name: "linkedin", component: <LinkedinLogo/> },
+];
+
 export function Links(props: LinksProps) {
   return (
     <div {...props} className={cx("links", props.className)}>
-      <Link className="github" to={"/social/github"} target="_blank">
-        <GithubLogo/>
-      </Link>
-
-      <Link className="twitter" to={"/social/twitter"} target="_blank">
-        <TwitterLogo/>
-      </Link>
-      
-      <Link className="telegram" to={"/social/telegram"} target="_blank">
-        <TelegramLogo/>
-      </Link>
-      
-      <Link className="instagram" to={"/social/instagram"} target="_blank">
-        <InstagramLogo/>
-      </Link>
-      
-      <Link className="linkedin" to={"/social/linkedin"} target="_blank">
-        <LinkedinLogo/>
-      </Link>
+      {links.map(({ name, component }) => (
+        <Link
+          key={name}
+          className={name}
+          to={`/social/${name}`}
+          target="_blank"
+        >
+          {component}
+        </Link>
+      ))}
     </div>
   );
 }

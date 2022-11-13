@@ -6,7 +6,7 @@ interface RedirectProps extends HTMLAttributes<HTMLElement> {
 }
 
 export function Redirect({ uri }: RedirectProps) {
-  useEffect(() => window.location.replace(uri), []);
+  useEffect(() => location.replace(uri), []);
 
   return null;
 }

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Header } from "../../components/Header";
 
 import "./styles.scss";
@@ -6,10 +5,7 @@ import "./styles.scss";
 export function Home() {
   return (
     <div className="home">
-      <Header pagetitle="Home">
-        <Link to="/contact">Contact</Link>
-        <Link to="/about">About</Link>
-      </Header>
+      <Header/>
     </div>
   );
 }

@@ -1,23 +1,26 @@
 @import "../../styles/theme";
 
 .links {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 
-  gap: 0 1rem;
+  gap: .75rem;
   line-height: 0;
 
   a svg {
     height: 2rem;
-    width: 2rem;
-    
+    width: auto;
+
     > * { color: $text }
   }
+
   a, a svg > * { transition: cubic-bezier(.2, .3, 0, 1) 250ms }
 
   a:hover {
     transform: scale(1.25);
-    
+
     &.github svg > * { color: $surface2 }
     &.twitter svg > * { color: $light-blue }
     &.telegram svg > * { color: $blue }

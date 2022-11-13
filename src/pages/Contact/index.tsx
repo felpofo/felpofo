@@ -59,10 +59,7 @@ export function Contact() {
 
   return (
     <div className="contact">
-      <Header pagetitle="Contact">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-      </Header>
+      <Header/>
 
       <section className={`color-${question}`}>
         {question === Question.NAME && (

@@ -5,13 +5,13 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Redirect } from "./components/Redirect";
 
-const links = {
-  telegram: "https://t.me/felpolho",
-  github: "https://github.com/felpofo",
-  twitter: "https://twitter.com/felpofo",
-  instagram: "https://instagram.com/felpofo",
-  linkedin: "https://linkedin.com/in/felpofo",
-};
+const links = [
+  { name: "telegram", link: "https://t.me/felpolho" },
+  { name: "github", link: "https://github.com/felpofo" },
+  { name: "twitter", link: "https://twitter.com/felpofo" },
+  { name: "instagram", link: "https://instagram.com/felpofo" },
+  { name: "linkedin", link: "https://linkedin.com/in/felpofo" },
+];
 
 export function App() {
   return (
@@ -21,11 +21,11 @@ export function App() {
       <Route path="/contact" element={<Contact/>}/>
 
       <Route path="/social">
-        {Object.entries(links).map((entry) => (
+        {links.map(({ name, link }) => (
           <Route
-            key={entry[0]}
-            path={entry[0]}
-            element={<Redirect uri={entry[1]}/>}
+            key={name}
+            path={name}
+            element={<Redirect uri={link}/>}
           />
         ))}
       </Route>

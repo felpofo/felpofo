@@ -7,37 +7,7 @@ header {
   align-items: center;
 
   padding: 1rem;
-  gap: 2rem;
+  gap: 2rem 4rem;
 
   background-color: $mantle;
-
-  > .left {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    gap: 2rem;
-
-    > h1 {
-      font-size: 2rem;
-      line-height: 2rem;
-      font-weight: bold;
-    }
-    
-    > .pages {
-      display: inline-flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
-
-      > a {
-        font-size: 1.4rem;
-      }
-    }
-  }
-
-  > .links {
-    flex-wrap: wrap;
-  }
 }
