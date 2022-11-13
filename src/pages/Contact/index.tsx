@@ -8,6 +8,15 @@ import { Header } from "../../components/Header";
 
 import "./styles.scss";
 
+enum Question {
+  NAME = 1,
+  EMAIL = 2,
+  SUBJECT = 3,
+  MESSAGE = 4,
+  THANKS = 0,
+  ERROR = 9
+}
+
 export function Contact() {
   const blobRef = createRef<SVGSVGElement>();
 
@@ -56,7 +65,7 @@ export function Contact() {
       </Header>
 
       <section className={`color-${question}`}>
-        {question === 1 && (
+        {question === Question.NAME && (
           <>
             <div className="question">
               <div className="texts">
@@ -65,6 +74,7 @@ export function Contact() {
               </div>
               <div>
                 <input
+                  autoFocus
                   type="text"
                   value={name}
                   onChange={(event) => setName(event.target.value)}
@@ -83,7 +93,7 @@ export function Contact() {
           </>
         )}
 
-        {question === 2 && (
+        {question === Question.EMAIL && (
           <>
             <div className="question">
               <div className="texts">
@@ -92,6 +102,7 @@ export function Contact() {
               </div>
               <div>
                 <input
+                  autoFocus
                   type="text"
                   value={contact}
                   onChange={(event) => setContact(event.target.value)}
@@ -116,7 +127,7 @@ export function Contact() {
           </>
         )}
 
-        {question === 3 && (
+        {question === Question.SUBJECT && (
           <>
             <div className="question">
               <div className="texts">
@@ -125,6 +136,7 @@ export function Contact() {
               </div>
               <div>
                 <input
+                  autoFocus
                   type="text"
                   value={subject}
                   onChange={(event) => setSubject(event.target.value)}
@@ -149,7 +161,7 @@ export function Contact() {
           </>
         )}
 
-        {question === 4 && (
+        {question === Question.MESSAGE && (
           <>
             <div className="question">
               <div className="texts">
@@ -157,6 +169,7 @@ export function Contact() {
                 <p>email message</p>
               </div>
               <textarea
+                autoFocus
                 value={message}
                 onChange={(event) => setMessage(event.target.value)}
               />
@@ -184,13 +197,13 @@ export function Contact() {
           </>
         )}
 
-        {question === 0 && ( // thanks screen
+        {question === Question.THANKS && ( // thanks screen
           <div className="thanks">
             <p>Thanks!</p>
           </div>
         )}
 
-        {question === 9 && ( // error screen
+        {question === Question.ERROR && ( // error screen
           <div className="failed">
             <p>An error occurred. Maybe directly contact me can help.</p>
           </div>
@@ -218,7 +231,7 @@ export function Contact() {
           <path fill="url(#gradient)">
             <animate
               attributeName="d"
-              dur="15s"
+              dur="45s"
               repeatCount="indefinite"
               values="M420.7122,331.4339Q380.09423,412.86779,301.16508,392.29219Q222.23594,371.7166,157.11322,349.24982Q91.99051,326.78305,53.64135,232.38203Q15.29219,137.98101,118.09898,129.47187Q220.90577,120.96273,294.67458,111.25967Q368.44339,101.55661,414.88678,175.77831Q461.33017,250,420.7122,331.4339Z;M411.71818,339.87391Q393.61186,429.74783,302.23794,426.16285Q210.86403,422.57787,122.32727,388.31581Q33.79051,354.05375,61.55534,263.35692Q89.32016,172.66008,145.95613,107.46324Q202.59209,42.2664,289.95613,66.5581Q377.32016,90.8498,403.57233,170.4249Q429.82451,250,411.71818,339.87391Z;M451.77435,331.68776Q380.0333,413.37552,297.8522,408.1811Q215.67111,402.98668,163.20108,360.14446Q110.73105,317.30225,116.40549,253.17111Q122.07993,189.03996,169.7144,146.88551Q217.34887,104.73105,314.55328,76.47669Q411.75769,48.22232,467.63654,149.11116Q523.51539,250,451.77435,331.68776Z;M420.7122,331.4339Q380.09423,412.86779,301.16508,392.29219Q222.23594,371.7166,157.11322,349.24982Q91.99051,326.78305,53.64135,232.38203Q15.29219,137.98101,118.09898,129.47187Q220.90577,120.96273,294.67458,111.25967Q368.44339,101.55661,414.88678,175.77831Q461.33017,250,420.7122,331.4339Z"
             ></animate>
