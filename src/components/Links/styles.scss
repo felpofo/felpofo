@@ -19,17 +19,9 @@
     transform: scale(1.25);
     
     &.github svg > * { color: $surface2 }
-    &.twitter svg > * { color: $sapphire }
+    &.twitter svg > * { color: $light-blue }
     &.telegram svg > * { color: $blue }
     &.instagram svg > * { color: $maroon }
-    &.linkedin svg > * { color: $sapphire }
-  }
-  
-  &.big {
-    .github svg > * { color: $surface2 }
-    .twitter svg > * { color: $sapphire }
-    .telegram svg > * { color: $blue }
-    .instagram svg > * { color: $maroon }
-    .linkedin svg > * { color: $sapphire }
+    &.linkedin svg > * { color: $light-blue }
   }
 }

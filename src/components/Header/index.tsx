@@ -16,7 +16,7 @@ export function Header(props: HeaderProps) {
         <div className="pages">{props.children}</div>
       </div>
 
-      <Links />
+      <Links/>
     </header>
   );
 }

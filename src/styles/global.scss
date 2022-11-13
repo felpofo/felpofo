@@ -27,7 +27,7 @@ body {
   &::selection {
     background-color: adjust-color($base, $lightness: 10%);
 
-    color: $sapphire;
+    color: $light-blue;
   }
 
   scrollbar-width: auto;
@@ -46,5 +46,5 @@ a {
   text-decoration: solid;
   transition: linear 100ms;
 
-  &:hover { color: $sapphire }
+  &:hover { color: $light-blue }
 }

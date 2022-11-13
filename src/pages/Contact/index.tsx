@@ -185,7 +185,7 @@ export function Contact() {
               subject &&
               message &&
               (isSendingEmail ? (
-                <CircleNotch size="3rem" className="next loading" />
+                <CircleNotch size="3rem" className="next loading"/>
               ) : (
                 <CaretDoubleRight
                   size="3rem"
@@ -211,7 +211,7 @@ export function Contact() {
 
         {question !== 1 && (
           <Link className="back-to-home" to="/">
-            <House size="3rem" />
+            <House size="3rem"/>
           </Link>
         )}
 

@@ -16,16 +16,16 @@ const links = {
 export function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/" element={<Home/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/contact" element={<Contact/>}/>
 
       <Route path="/social">
         {Object.entries(links).map((entry) => (
           <Route
             key={entry[0]}
             path={entry[0]}
-            element={<Redirect uri={entry[1]} />}
+            element={<Redirect uri={entry[1]}/>}
           />
         ))}
       </Route>
