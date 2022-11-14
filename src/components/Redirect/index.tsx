@@ -1,7 +1,6 @@
 import { useEffect } from "react";
-import type { HTMLAttributes } from "react";
 
-interface RedirectProps extends HTMLAttributes<HTMLElement> {
+interface RedirectProps extends React.HTMLAttributes<HTMLElement> {
   uri: string;
 }
 

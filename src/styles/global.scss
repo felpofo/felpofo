@@ -2,12 +2,9 @@
 @import "theme";
 
 body {
-  height: 100vh;
-  width: 100vw;
-
   background-color: $base;
 
-  overflow: hidden;
+  overflow: hidden overlay;
 }
 
 *:not(head, head > *) {
@@ -23,28 +20,25 @@ body {
 
   outline: none;
 
-  &::placeholder { color: $overlay1 }
+  &::placeholder {
+    color: $overlay1;
+  }
+
   &::selection {
     background-color: adjust-color($base, $lightness: 10%);
 
     color: $light-blue;
   }
 
-  scrollbar-width: auto;
-  scrollbar-color: mix($text, $crust) $crust;
-
-  &::-webkit-scrollbar { width: .75rem }
-  &::-webkit-scrollbar-track { background: $crust }
-  &::-webkit-scrollbar-thumb {
-    background-color: mix($text, $crust);
-    border-radius: 2rem;
-    border: .25rem solid $crust;
-  }
+  scrollbar-width: .75rem;
+  scrollbar-color: $overlay0 $crust;
 }
 
 a {
   text-decoration: solid;
   transition: linear 100ms;
 
-  &:hover { color: $light-blue }
+  &:hover {
+    color: $light-blue;
+  }
 }

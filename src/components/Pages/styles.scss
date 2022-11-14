@@ -7,24 +7,23 @@
   align-items: center;
   gap: 1.25rem 1rem;
 
-  line-height: 2rem;
-  
+
   a {
     font-size: 1.4rem;
-
-    transition: none;
 
     &:hover:not(:first-child) {
       scale: 1.025;
     }
-    
+
     &:first-child {
       font-size: 2rem;
       font-weight: bold;
-  
+
       margin-right: .5rem;
-    
-      &:hover {
+
+      transition: color linear 100ms;
+
+      &:hover, &::selection {
         color: $yellow;
       }
     }

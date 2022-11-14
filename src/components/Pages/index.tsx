@@ -1,10 +1,10 @@
-import { HTMLAttributes, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import cx from "classnames";
 import { Link } from "react-router-dom";
 
 import "./styles.scss";
 
-interface PagesProps extends HTMLAttributes<HTMLElement> {}
+interface PagesProps extends React.HTMLAttributes<HTMLElement> {}
 
 export function Pages(props: PagesProps) {
   const [pages, setPages] = useState([
@@ -13,11 +13,12 @@ export function Pages(props: PagesProps) {
     { name: "About", path: "/about" },
   ]);
 
-  useEffect(() => () => {
+  useEffect(() => {
     setPages(prev => {
       const actualPage = prev.find(page => page.path == location.pathname)!;
+
       const newPages = [actualPage];
-      newPages.push(...prev.filter(page => page != actualPage ?? page));
+      newPages.push(...prev.filter(page => page.path != actualPage.path ?? page));
 
       return newPages;
     });

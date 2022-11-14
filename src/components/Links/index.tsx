@@ -7,11 +7,10 @@ import {
   LinkedinLogo,
 } from "phosphor-react";
 import cx from "classnames";
-import type { HTMLAttributes } from "react";
 
 import "./styles.scss";
 
-interface LinksProps extends HTMLAttributes<HTMLElement> {}
+interface LinksProps extends React.HTMLAttributes<HTMLElement> {}
 
 const links = [
   { name: "github", component: <GithubLogo/> },

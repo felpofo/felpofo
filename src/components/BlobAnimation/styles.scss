@@ -1,0 +1,15 @@
+@import "../../styles/theme";
+
+.blob {
+  position: absolute;
+  width: 90%;
+
+  transition: 500ms ease-in-out;
+  filter: brightness(80%);
+
+  z-index: -1;
+
+  #gradient > stop {
+    transition: 500ms linear;
+  }
+}
