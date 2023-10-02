@@ -2,7 +2,6 @@
 
 My name is **Felipe**, and I'm 16 years old.  
 I love programming, especially at night.
-Back-end is what moves the world. Without OS'es you cannot make your **blazingly fast** websites with rust svelte.
 
 ## Contact
 [![Email](https://img.shields.io/badge/Email-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white)][Contact]
