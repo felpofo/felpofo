@@ -1,9 +1,7 @@
 # Hello
 
-My name is **Felipe**, and I'm almost eighteen now  
+My name is **Felipe**, or **Phillip** if you're gringo. btw i'm almost eighteen now  
 I love programming, especially at night  
-Currently studying low-level programming ~~I'll go crazy~~  
-Thinking about becoming a woodcarver, but always giving up.  
 
 ## Contact
 [![Email](https://img.shields.io/badge/Email-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white)][Contact]
