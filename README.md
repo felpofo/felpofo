@@ -1,7 +1,4 @@
-# Hello
-
-My name is **Felipe**, or **Phillip** if you're gringo. btw i'm almost eighteen now  
-I love programming, especially at night  
+![hello](https://github.com/felpofo/felpofo/assets/60475738/d29db5df-6bb3-47a0-b9ca-178bda45f848)
 
 ## Contact
 [![Email](https://img.shields.io/badge/Email-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white)][Contact]
